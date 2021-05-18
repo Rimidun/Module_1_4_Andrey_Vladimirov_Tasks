@@ -10,7 +10,6 @@ public class Ex1 {
 
         Foo foo = Foo.getLimInstance();
 
-
         //Foo foo = new Foo();
         List<Integer> sourceList = Arrays.asList(1, 2, 3);
         Map<Integer, Runnable> map = new HashMap<>(3);
@@ -31,14 +30,6 @@ public class Ex1 {
             thread.start();
             threadList.add(thread);
         }
-
-//        threadList.forEach(thread -> {
-//            try {
-//                thread.join();
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        });
     }
 }
 
