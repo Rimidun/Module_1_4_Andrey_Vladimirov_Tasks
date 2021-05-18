@@ -4,19 +4,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 class Main {
 
-    public void first(Runnable printFirst) throws InterruptedException {
-        throw new RuntimeException();
-    }
-
-    public void second(Runnable printSecond) throws InterruptedException {
-        throw new RuntimeException();
-    }
-
-    public void third(Runnable printThird) throws InterruptedException {
-        throw new RuntimeException();
-    }
-
-
     private static class Foo extends Main {
 
         private final AtomicInteger atomicInteger = new AtomicInteger(0);
@@ -53,6 +40,18 @@ class Main {
             printThird.run();
         }
 
+    }
+
+    public void first(Runnable printFirst) throws InterruptedException {
+        throw new RuntimeException();
+    }
+
+    public void second(Runnable printSecond) throws InterruptedException {
+        throw new RuntimeException();
+    }
+
+    public void third(Runnable printThird) throws InterruptedException {
+        throw new RuntimeException();
     }
 
 
