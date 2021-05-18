@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
-public class Ex1 {
+public class Ex3 {
     public static class Foo {
         public void first() { print("first"); }
         public void second() { print("second"); }
